@@ -10,12 +10,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	background: #17a2b8;
+	background: #323437;
 }
 
 .wrapper {
-	width: 770px;
-	background: #fff;
+	width: 85%;
+	/* background: #fff; */
 	border-radius: 10px;
 	padding: 35px;
 }
@@ -29,7 +29,7 @@ body {
 .content-box {
 	padding: 13px 20px 0;
 	border-radius: 10px;
-	border: 1px solid#ccc;
+	border: 1px solid#646669;
 }
 
 .typing-text {
@@ -42,10 +42,12 @@ body {
 }
 
 .typing-text p {
-	font-size: 21px;
+	padding: 5px;
+	font-size: 30px;
 	text-align: justify;
 	letter-spacing: 1px;
 	word-break: break-all;
+	color: #646669;
 }
 
 .typing-text p span {
@@ -53,7 +55,7 @@ body {
 }
 
 span.active {
-	color: #17a2b8;
+	color: #646669;
 }
 
 span.active::before {
@@ -64,7 +66,7 @@ span.active::before {
 	height: 80%;
 	width: 2px;
 	opacity: 0;
-	background: #17a2b8;
+	background: #A08621;
 	animation: blink 1s ease-in-out infinite;
 }
 
@@ -79,14 +81,15 @@ span.active::before {
 	margin-top: 17px;
 	padding: 12px 0;
 	align-items: center;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #646669;
 	justify-content: space-between;
 }
 
 .result-details {
 	display: flex;
 	width: calc(100% - 140px);
-	justify-content: space-between;
+	justify-content: space-around;
+	color: #646669;
 }
 
 .result-details li {
@@ -97,8 +100,8 @@ span.active::before {
 }
 
 .result-details li:not(:first-child) {
-	padding-left: 22px;
-	border-left: 1px solid #ccc;
+	padding-left: 66px;
+	border-left: 1px solid #646669;
 }
 
 .result-details p {
@@ -124,11 +127,11 @@ span.active::before {
 	outline: none;
 	width: 105px;
 	padding: 8px 0;
-	color: #fff;
+	color: #323437;
 	cursor: pointer;
 	font-size: 16px;
 	border-radius: 5px;
-	background: #17a2b8;
+	background: #646669;
 	transition: transform 0.3s ease;
 }
 
@@ -141,8 +144,7 @@ span.active::before {
 }
 
 .incorrect {
-	/* background: #ffc0cb; */
 	color: #ca4754;
-	outline: 1px solid #fff;
+	outline: 1px solid #aaa;
 	border-radius: 4px;
 }
